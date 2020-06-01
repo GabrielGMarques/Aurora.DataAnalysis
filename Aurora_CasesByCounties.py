@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
-df = pd.read_csv('C:/Users/genar/OneDrive/Área de Trabalho/Aurora Project/us-counties.csv', engine='python')
+
+df = pd.read_csv('/Assets/us-counties.csv')
 
 df0 = df[(df["county"] == 'Alachua') & (df["state"] == 'Florida')]
 df00 = df0[['date','cases']]
